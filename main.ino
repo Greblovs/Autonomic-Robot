@@ -17,7 +17,7 @@ class USsensor{
    
   public:
     USsensor(){
-      // constuctor for lazy people with default settings 
+      // constuctor with default settings 
       pinMode(trig,OUTPUT);
       pinMode(echo, INPUT);
     }
@@ -61,7 +61,7 @@ class USsensor{
 
 
 class motionControl{
-  // 4 указателя на 4 мотора + всякая фигня 
+   
   private:
     int speed = 255;                  //default max speed
     int IRPIN = 22;                   //Pin for Infra-Red sensor 
@@ -154,7 +154,7 @@ class motionControl{
         }
       }
     }
-  //  a lot of stupied code for controling motors
+ 
   void movmentControl(){
     if (input == 'f'){
       // forward
